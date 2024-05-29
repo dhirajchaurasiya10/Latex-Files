@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[paper=a4paper,margin=1in]{geometry}
+\usepackage{lipsum}
+\usepackage{blindtext}
+\usepackage{ragged2e}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{bibref}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{ragged2e}
+\renewcommand{\contentsname}{Table of Contents} 
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
+\hypersetup{hidelinks}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+
+
+
+\begin{document}
+
+\input{pages/title}
+\input{pages/abstract}
+\newpage
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+\newpage
+\lsitoftables
+\addcontentsline{toc}{section}{List of Tables}
+\newpage
+\tableofcontents
+\input{pages/introduction}
+
+\end{document}
